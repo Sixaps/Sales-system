@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS 'cloud'@'%' IDENTIFIED BY 'cloud';
+
+CREATE DATABASE IF NOT EXISTS sales_system;
+
+GRANT ALL PRIVILEGES ON sales_system.* TO 'cloud'@'%' IDENTIFIED BY 'cloud';
+
+FLUSH PRIVILEGES;
+
+
